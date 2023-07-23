@@ -1,0 +1,75 @@
+.gallery{
+    margin-top: 20px;
+    width: 100%;
+}
+
+h1{
+    margin-top: 100px;
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-bottom: 30px;
+    padding-bottom: 20x;
+}
+h1::before{
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background-color: rgb(186, 29, 29);
+    transform: translateX(-50%);
+}
+.alb::before{
+    width: 100px;
+}
+.galry::before{
+    width: 400px;
+}
+.crtfts::before{
+    width: 450px;
+}
+
+ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+h2{
+    color: blue;
+    font-size: large;
+    text-align: center;
+    font-size: 20px;
+}
+img{
+    height: 300px;
+    width: 400px;
+    border-radius: 10px;
+    margin: 20px 10px 20px 10px;
+}
+
+.frm{
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 50px;
+}
+.frm button{
+    display: inline-block;
+    cursor: pointer;
+    background-color: crimson;
+    color: azure;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 5px 15px;
+    margin-top: 15px;
+    margin-left: 100px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+.frm button:hover{
+    color: rgb(231, 215, 77);
+    background: none;
+}

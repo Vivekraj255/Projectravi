@@ -1,0 +1,40 @@
+.about .down .text-3{
+    color: palegreen;
+    position: relative;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500px;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 20x;
+}
+.about .down .text-3::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 230px;
+    left: 50%;
+    bottom: -5px;
+    background-color: peru;
+    transform: translateX(-50%);
+}
+.about .down .doc-2{
+    color: white;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    margin-left: 30px;
+}
+.about .crtfct{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .down img{
+    height: 300px;
+    width: 400px;
+    margin-left: 5px;
+    border-radius: 10px;
+}

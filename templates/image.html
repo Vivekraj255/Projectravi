@@ -1,0 +1,17 @@
+{% include "header.html" %}
+
+<h1 class="galry">Gallery Image Upload Page</h1>
+
+<section class="gallery" id="photo">
+
+  <div class="frm">
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ form.as_p }}
+      <button type="submit">Submit New Post</button>
+    </form>
+  </div>
+
+</section>
+
+{% include "footer.html" %}

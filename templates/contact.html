@@ -1,0 +1,22 @@
+{% include "header.html" %}
+
+<section>
+    <div class="contact" id="contact">
+        <h3>Contact me</h3>
+
+        <div class="form">
+
+            <form method="post" action="{% url 'saveEnquiry' %}">
+                {% csrf_token %}
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="text" name="Email" placeholder="Your Email" required>
+                <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                <button type="Submit">Submit</button>
+            </form>
+            
+        </div>
+
+    </div>
+</section>
+
+{% include "footer.html" %}

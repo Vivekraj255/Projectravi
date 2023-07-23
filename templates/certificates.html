@@ -1,0 +1,20 @@
+{% include "header.html" %}
+
+<h1>Certifiates Uploaded</h1>
+
+<section class="gallery" id="photo">
+
+    <ul>
+      {% for post in object_list %}
+
+      <div>
+        <img src="{{ post.cover.url}}" alt="{{ post.title }}">
+        <h2>{{ post.title }}</h2>
+      </div>
+      
+      {% endfor %}
+    </ul>
+    
+</section>
+
+{% include "footer.html" %}

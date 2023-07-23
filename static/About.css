@@ -1,0 +1,73 @@
+/* About section styling */
+section{
+    padding: 20px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: auto;
+}
+.about h2{
+    top: 60px;
+    color: whitesmoke;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500px;
+    margin-bottom: 30px;
+    padding-bottom: 20x;
+}
+.about h2::before{
+    content: "";
+    position: absolute;
+    width: 140px;
+    height: 3px;
+    left: 50%;
+    bottom: -5px;
+    background-color: rgb(186, 29, 29);
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about .about-content .left img{
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+    margin-left: 440px;
+    margin-top: 60px;
+}
+
+.about .about-content .right{
+    margin-top: 50px;
+    width: 50%;
+}
+
+p{
+    font-size: 20px;
+    color: black;
+
+}
+
+@media(max-width:900px){
+.about .about-content .left img{
+    width: 250px;
+    height: 350px;
+    margin-left: 180px;
+    margin-top: 80px;
+}
+.about .about-content .left{
+    display: flex;
+    padding-right: 10px;
+}
+.max-width{
+    max-width: 800px;
+}
+.about .about-content .column{
+    width: 50%;
+}
+.about .about-content .left{
+    flex: 50%;
+}
+}
